@@ -1,5 +1,5 @@
 <?php
-/* Template Name: contact page */
+/* Template Name: about page */
 ?>
 
 <?php
@@ -11,7 +11,7 @@ get_header();
         while( have_posts() ) {
             the_post();
             
-            get_template_part('template-parts/content', 'webform');
+            get_template_part('template-parts/content', 'about');
         }
     }
 ?>

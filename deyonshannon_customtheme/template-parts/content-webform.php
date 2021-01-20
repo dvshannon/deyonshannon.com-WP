@@ -35,13 +35,9 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
 if($message_sent);
 ?>
 
-    <h3>Your email has been sent!</h3>
 
 
-
-
-
-    <div class="container">
+    <div class="container pb-4">
         <form action="webform.php" method="POST" class="form">
             <div class="form-group">
                 <label for="name" class="form-label">Your Name</label>
@@ -56,7 +52,7 @@ if($message_sent);
                 <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter message.." tabindex="3"></textarea>
             </div>
             <div>
-                <button type="submit" class="btn">Send</button>
+                <button type="submit" class="contact-btn">Send<span aria-hidden class="contact-btn__glitch">Send</span></button>
             </div>
         </form>
     </div>
